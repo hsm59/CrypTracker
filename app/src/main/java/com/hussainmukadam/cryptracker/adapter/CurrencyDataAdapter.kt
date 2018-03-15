@@ -17,7 +17,9 @@ class CurrencyDataAdapter : RecyclerView.Adapter<CurrencyDataAdapter.CurrencyHol
 
     private var currencyList : List<Currency> = emptyList()
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) = CurrencyHolder(LayoutInflater.from(parent.context).inflate(R.layout.currency_item, parent, false))
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) =
+            CurrencyHolder(LayoutInflater.from(parent.context)
+                    .inflate(R.layout.currency_item, parent, false))
 
     override fun onBindViewHolder(holder: CurrencyHolder, position: Int) {
         Log.d("", "Inside bind view holder "+currencyList[position])
