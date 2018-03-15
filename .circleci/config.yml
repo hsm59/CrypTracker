@@ -70,6 +70,8 @@ dependencies:
     cache_directories:
         - /usr/local/android-sdk-linux/tools
         - /usr/local/android-sdk-linux/build-tools/26.0.0
+    override:
+        ANDROID_HOME=/usr/local/android-sdk-linux ./gradlew dependencies
 
 # Comment the test stuff out (or remove it) if you don't need it.
 test:
